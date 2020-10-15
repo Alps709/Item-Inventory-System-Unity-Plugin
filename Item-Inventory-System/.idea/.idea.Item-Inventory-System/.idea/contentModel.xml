@@ -10,6 +10,7 @@
           <e p="MouseLook.cs" t="Include" />
           <e p="MyInventory.cs" t="Include" />
           <e p="MyItem.cs" t="Include" />
+          <e p="PlayerMovement.cs" t="Include" />
         </e>
       </e>
       <e p="Item-Inventory-System.sln" t="IncludeFlat" />
