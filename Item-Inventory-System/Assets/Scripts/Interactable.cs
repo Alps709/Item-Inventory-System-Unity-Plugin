@@ -13,7 +13,7 @@ public class Interactable : MonoBehaviour
 
     void Update()
     {
-        if (IsFocused && !HasInteracted)
+        if (IsFocused && Input.GetMouseButtonDown(1))
         {
             float distance = Vector3.Distance(Player.position, transform.position);
             if (distance <= Radius)
