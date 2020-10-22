@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class MyPlayerController : MonoBehaviour
 {
@@ -26,18 +24,20 @@ public class MyPlayerController : MonoBehaviour
             HitInteractable = RayCastHit.collider.GetComponent<Interactable>();
         }
         
+        //Only null if not an interactable
         if (HitInteractable != null)
         {
             SetFocus(HitInteractable);
+
+            //Check if left mouse button has been clicked, to interact with the item
+            if (Input.GetMouseButtonDown(1))
+            {
+                Interact();
+            }
         }
         else
         {
             RemoveFocus();
-        }
-
-        if (Input.GetMouseButtonDown(1) && FocusedItem != null)
-        {
-            //Pickup Item
         }
     }
 
@@ -53,7 +53,7 @@ public class MyPlayerController : MonoBehaviour
             
             //Set new focused item
             FocusedItem = NewFocus;
-            FocusedItem.OnFocused(transform);
+            FocusedItem.OnFocused(gameObject);
         }
     }
 
@@ -64,5 +64,10 @@ public class MyPlayerController : MonoBehaviour
             FocusedItem.OnDefocused();
         }
         FocusedItem = null;
+    }
+
+    void Interact()
+    {
+        FocusedItem.InteractedWith();
     }
 }
