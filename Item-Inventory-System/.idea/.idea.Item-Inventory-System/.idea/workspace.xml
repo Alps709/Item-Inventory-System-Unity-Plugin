@@ -9,13 +9,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Items&amp;Inventory/MyInventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MyPlayerController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/MouseLook.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MyItem.cs" />
@@ -23,8 +21,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Items&amp;Inventory/Interactable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Items&amp;Inventory/MyItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Items&amp;Inventory/MyInventory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MyPlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Items&amp;Inventory/MyItemPickup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/MyInventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/MyInventoryUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/InventorySlot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MouseLook.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MyPlayerController.cs" />
       </list>
     </option>
   </component>

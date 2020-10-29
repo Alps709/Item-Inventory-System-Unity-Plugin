@@ -1,15 +1,21 @@
-﻿using UnityEngine;
+﻿using UnityEditor;
+using UnityEngine;
 
 public class MyPlayerController : MonoBehaviour
 {
     public Camera Cam;
-
+    private bool MouseEnabled = false;
+    public MyInventory Inventory;
     public Interactable FocusedItem;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        Inventory = GetComponent<MyInventory>();
+        if (Inventory == null)
+        {
+            Debug.LogError("Player couldn't find inventory reference!");
+        }
     }
 
     // Update is called once per frame
@@ -43,6 +49,24 @@ public class MyPlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             Interact();
+        }
+
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            MouseEnabled = !MouseEnabled;
+
+            if (MouseEnabled)
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            }
+            else
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+            }
+            
+            Inventory.Opened();
         }
     }
 
