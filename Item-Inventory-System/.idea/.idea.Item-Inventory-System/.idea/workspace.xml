@@ -23,10 +23,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Items&amp;Inventory/MyInventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Items&amp;Inventory/MyItemPickup.cs" />
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/MyInventory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/MyInventoryUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/InventorySlot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MouseLook.cs" />
+        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/MyInventoryUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MyPlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/InventorySlot.cs" />
       </list>
     </option>
   </component>

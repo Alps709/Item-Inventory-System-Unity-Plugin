@@ -46,7 +46,7 @@ public class MyPlayerController : MonoBehaviour
             RemoveFocus();
         }
         
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && FocusedItem)
         {
             Interact();
         }

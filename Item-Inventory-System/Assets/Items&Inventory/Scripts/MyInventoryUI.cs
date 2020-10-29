@@ -3,6 +3,7 @@
 public class MyInventoryUI : MonoBehaviour
 {
     public GameObject OwningPlayer;
+    public Transform InventoryParent;
     public Transform ItemsParent;
     public InventorySlot[] Slots;
     
@@ -40,6 +41,8 @@ public class MyInventoryUI : MonoBehaviour
     {
         if (Inventory.InventoryOpened)
         {
+            InventoryParent.GetComponentInParent<Canvas>().enabled = true;
+            
             Debug.Log("Updating Inventory UI!");
 
             for (int i = 0; i < Slots.Length; i++)
@@ -56,6 +59,10 @@ public class MyInventoryUI : MonoBehaviour
                     Slots[i].ClearSlot();
                 }
             }
+        }
+        else
+        {
+            InventoryParent.GetComponentInParent<Canvas>().enabled = false;
         }
     }
 }
