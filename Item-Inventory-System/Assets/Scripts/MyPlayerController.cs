@@ -39,6 +39,11 @@ public class MyPlayerController : MonoBehaviour
         {
             RemoveFocus();
         }
+        
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Interact();
+        }
     }
 
     void SetFocus(Interactable NewFocus)

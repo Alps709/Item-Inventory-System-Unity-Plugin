@@ -14,8 +14,6 @@ public class MyItemPickup : Interactable
 
     public void PickUp()
     {
-        
-        
         //Get the inventory of the interacting player (may be null)
         var inventory = InteractingPlayer.GetComponent<MyInventory>();
         if (inventory == null)
@@ -29,7 +27,5 @@ public class MyItemPickup : Interactable
         {
             Destroy(gameObject);
         }
-        
-       
     }
 }

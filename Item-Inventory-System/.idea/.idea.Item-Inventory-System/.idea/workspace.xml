@@ -20,11 +20,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MyItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MyItemPickup.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MyPlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Items&amp;Inventory/Interactable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Items&amp;Inventory/MyItemPickup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Items&amp;Inventory/MyItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Items&amp;Inventory/MyInventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MyPlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Items&amp;Inventory/MyItemPickup.cs" />
       </list>
     </option>
   </component>

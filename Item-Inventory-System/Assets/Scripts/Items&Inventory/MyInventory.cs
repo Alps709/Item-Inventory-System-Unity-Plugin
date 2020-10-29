@@ -6,7 +6,7 @@ public class MyInventory : MonoBehaviour
 {
     public List<MyItem> InventoryItems = new List<MyItem>();
 
-    private int MaxSize = 3;
+    public int MaxSize = 3;
     private int Size = 0;
 
     public delegate void OnInventoryChanged();
