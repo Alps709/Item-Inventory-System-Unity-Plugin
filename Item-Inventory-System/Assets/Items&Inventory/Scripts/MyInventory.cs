@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class MyInventory : MonoBehaviour
@@ -34,6 +35,7 @@ public class MyInventory : MonoBehaviour
 
     public bool Remove(MyItem item)
     {
+        Debug.Log("Item ID: " + item.ID);
         if (InventoryItems.Remove(item))
         {
             Size--;
@@ -48,4 +50,9 @@ public class MyInventory : MonoBehaviour
         InventoryOpened = !InventoryOpened;
         OnInventoryOpenedCallback?.Invoke();
     }
+
+    // public void SortByName()
+    // {
+    //     InventoryItems.OrderBy(item => item.name);
+    // }
 }

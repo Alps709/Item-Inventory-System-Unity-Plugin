@@ -34,7 +34,15 @@ public class MyInventoryUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // if (Inventory.InventoryOpened)
+        // {
+        //     if (Input.GetKeyDown(KeyCode.K))
+        //     {
+        //         //Inventory.SortByName();
+        //         //UpdateUI();
+        //         Debug.Log("Sorted inventory!");
+        //     }
+        // }
     }
 
     void UpdateUI()

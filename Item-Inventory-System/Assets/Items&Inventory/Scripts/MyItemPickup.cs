@@ -1,10 +1,18 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class MyItemPickup : Interactable
 {
     public MyItem Item;
+
+    private void Start()
+    {
+        Debug.Log("Setting Item ID: " + Item.ID + " for item " + Item.Name);
+        Item.ID = gameObject.transform.GetInstanceID();
+    }
+
     public override void Interact()
     {
         base.Interact();

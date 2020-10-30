@@ -1,11 +1,12 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Item", menuName = "Inventory/MyItem")]
 public class MyItem : ScriptableObject
 {
     //Id used to identify the item
     public bool IsDefaultItem = true;
-    private int ID;
+    public int ID = -1;
     public string Name;
     public string Descripton;
     public Sprite Icon = null;
@@ -29,5 +30,6 @@ public class MyItem : ScriptableObject
     // Start is called before the first frame update
     void Start()
     {
+        
     }
 }
