@@ -7,7 +7,6 @@ public class MyItem : ScriptableObject
     //Id used to identify the item
     public bool IsDefaultItem = true;
     public int ID = -1;
-    public string Name;
     public string Descripton;
     public Sprite Icon = null;
     
@@ -19,11 +18,11 @@ public class MyItem : ScriptableObject
     //Object model (for when this item can be dropped in the world)
     public Mesh Mesh;
     
-    public MyItem(int id, string name, string descripton, Mesh mesh)
+    public MyItem(int id, string descripton, Sprite icon, Mesh mesh)
     {
         ID = id;
-        Name = name;
         Descripton = descripton;
+        Icon = icon;
         Mesh = mesh;
     }
     
@@ -31,5 +30,13 @@ public class MyItem : ScriptableObject
     void Start()
     {
         
+    }
+
+    public virtual void Use()
+    {
+        //Use the item
+        //What happens will depend on the type of derived item
+        
+        Debug.Log("Using " + name);
     }
 }

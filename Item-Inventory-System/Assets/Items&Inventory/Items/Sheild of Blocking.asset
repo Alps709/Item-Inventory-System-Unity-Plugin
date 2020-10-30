@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Sheild of Blocking
   m_EditorClassIdentifier: 
   IsDefaultItem: 0
-  ID: 14440
-  Name: Shield of Blocking
-  Descripton: 
+  ID: 14626
+  Descripton: A shield that blocks! :O no way!
   Icon: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   Mesh: {fileID: 0}

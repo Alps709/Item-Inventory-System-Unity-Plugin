@@ -3,7 +3,7 @@
 public class MyInventoryUI : MonoBehaviour
 {
     public GameObject OwningPlayer;
-    public Transform InventoryParent;
+    public GameObject InventoryUI;
     public Transform ItemsParent;
     public InventorySlot[] Slots;
     
@@ -34,23 +34,17 @@ public class MyInventoryUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if (Inventory.InventoryOpened)
-        // {
-        //     if (Input.GetKeyDown(KeyCode.K))
-        //     {
-        //         //Inventory.SortByName();
-        //         //UpdateUI();
-        //         Debug.Log("Sorted inventory!");
-        //     }
-        // }
+        if (Input.GetButtonDown("Inventory"))
+        {
+            InventoryUI.SetActive(!InventoryUI.activeSelf);
+            Inventory.Opened();
+        }
     }
 
     void UpdateUI()
     {
         if (Inventory.InventoryOpened)
         {
-            InventoryParent.GetComponentInParent<Canvas>().enabled = true;
-            
             Debug.Log("Updating Inventory UI!");
 
             for (int i = 0; i < Slots.Length; i++)
@@ -67,10 +61,6 @@ public class MyInventoryUI : MonoBehaviour
                     Slots[i].ClearSlot();
                 }
             }
-        }
-        else
-        {
-            InventoryParent.GetComponentInParent<Canvas>().enabled = false;
         }
     }
 }

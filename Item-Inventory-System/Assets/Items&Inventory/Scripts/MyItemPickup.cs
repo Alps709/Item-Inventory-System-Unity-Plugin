@@ -9,7 +9,7 @@ public class MyItemPickup : Interactable
 
     private void Start()
     {
-        Debug.Log("Setting Item ID: " + Item.ID + " for item " + Item.Name);
+        Debug.Log("Setting Item ID: " + Item.ID + " for item " + Item.name);
         Item.ID = gameObject.transform.GetInstanceID();
     }
 

@@ -45,6 +45,7 @@ public class MyInventory : MonoBehaviour
         return false;
     }
 
+    //This function is called from the InventoryUI script, to show/hide the inventory
     public void Opened()
     {
         InventoryOpened = !InventoryOpened;

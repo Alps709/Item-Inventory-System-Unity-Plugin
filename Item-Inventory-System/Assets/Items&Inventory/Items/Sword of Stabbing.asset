@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sword of Stabbing
   m_EditorClassIdentifier: 
   IsDefaultItem: 0
-  Name: Sword of Stabbing!
+  ID: 14636
   Descripton: A sword that stabs! :0
   Icon: {fileID: 21300000, guid: b3f2e115ee4fce4439192dce0f45bd17, type: 3}
   Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
