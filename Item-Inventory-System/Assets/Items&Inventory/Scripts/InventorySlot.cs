@@ -4,17 +4,17 @@ using UnityEngine.UI;
 
 public class InventorySlot : MonoBehaviour
 {
-    public MyItem Item;
+    public Item Item;
 
     public Image Icon;
     public Button RemoveButton;
-    private MyInventory PlayerInventory;
+    private Inventory PlayerInventory;
 
 
     private void Start()
     {
         //Get reference to player inventory by finding the InventoryUI and getting owning player
-        PlayerInventory = GetComponentInParent<MyInventoryUI>().OwningPlayer.GetComponent<MyInventory>();
+        PlayerInventory = GetComponentInParent<InventoryUI>().OwningPlayer.GetComponent<Inventory>();
 
         if (PlayerInventory == null)
         {
@@ -22,11 +22,11 @@ public class InventorySlot : MonoBehaviour
         }
     }
 
-    public void AddItem(MyItem newItem)
+    public void AddItem(Item newItem)
     {
         Item = newItem;
 
-        Icon.sprite = Item.Icon;
+        Icon.sprite = Item.icon;
         Icon.enabled = true;
         RemoveButton.interactable = true;
         RemoveButton.enabled = true;
@@ -51,7 +51,8 @@ public class InventorySlot : MonoBehaviour
     {
         if (Item != null)
         {
-            Item.Use();
+            //Pass in the player as the instigator so effects can use its info
+            Item.Use(PlayerInventory.gameObject);
         }
     }
 }

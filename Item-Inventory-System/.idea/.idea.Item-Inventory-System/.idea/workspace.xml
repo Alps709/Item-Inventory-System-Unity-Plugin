@@ -29,8 +29,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Items&amp;Inventory/Items&amp;Equipment/Effects/ForcePush.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MyPlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63DD8BF9-8CFA-4BA9-85AF-735EF1A56BA9/9e/40bffb1f/Void.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -42,7 +44,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Items&amp;Inventory/MyItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Items&amp;Inventory/MyInventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Items&amp;Inventory/MyItemPickup.cs" />
-        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/InventorySlot.cs" />
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/MyItemPickup.cs" />
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/MyItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/MyInventory.cs" />
@@ -50,6 +51,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MouseLook.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MyPlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/InventoryUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/InventorySlot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Items&amp;Equipment/Effects/ForcePush.cs" />
+        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/EquipmentEffect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/Equipment.cs" />
       </list>
     </option>
   </component>
@@ -119,10 +127,14 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="670" y="198" key="RiderGenerateDialog" timestamp="1602212813771">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604204047516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="670" y="198" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602212813771" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604204047516" />
+    <state x="670" y="198" key="RiderGenerateDialog" timestamp="1604200307915">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="670" y="198" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604200307915" />
     <state x="2381" y="170" key="SettingsEditor" timestamp="1604023003405">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>

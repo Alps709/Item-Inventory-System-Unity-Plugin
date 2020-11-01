@@ -7,14 +7,14 @@ public class MyPlayerController : MonoBehaviour
     public PlayerMovement PlayerMovement;
     public MouseLook CameraMovement;
     private bool MouseEnabled = false;
-    public MyInventory Inventory;
+    public Inventory Inventory;
     public Interactable FocusedItem;
     
     // Start is called before the first frame update
     void Start()
     {
         //Get reference to player inventory
-        Inventory = GetComponent<MyInventory>();
+        Inventory = GetComponent<Inventory>();
         if (Inventory == null)
         {
             Debug.LogError("Player couldn't find inventory reference!");

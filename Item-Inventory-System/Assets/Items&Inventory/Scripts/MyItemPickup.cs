@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class MyItemPickup : Interactable
 {
-    public MyItem Item;
+    public Item Item;
 
     private void Start()
     {
@@ -23,7 +23,7 @@ public class MyItemPickup : Interactable
     public void PickUp()
     {
         //Get the inventory of the interacting player (may be null)
-        var inventory = InteractingPlayer.GetComponent<MyInventory>();
+        var inventory = InteractingPlayer.GetComponent<Inventory>();
         if (inventory == null)
         {
             Debug.Log("The player trying to pick up the item: " + Item.name + ", does not have an inventory!");

@@ -7,12 +7,19 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Items&amp;Inventory" t="Include">
+          <e p="Items&amp;Equipment" t="Include">
+            <e p="Effects" t="Include">
+              <e p="ForcePush.cs" t="Include" />
+            </e>
+          </e>
           <e p="Scripts" t="Include">
+            <e p="Equipment.cs" t="Include" />
+            <e p="EquipmentEffect.cs" t="Include" />
             <e p="Interactable.cs" t="Include" />
+            <e p="Inventory.cs" t="Include" />
             <e p="InventorySlot.cs" t="Include" />
-            <e p="MyInventory.cs" t="Include" />
-            <e p="MyInventoryUI.cs" t="Include" />
-            <e p="MyItem.cs" t="Include" />
+            <e p="InventoryUI.cs" t="Include" />
+            <e p="Item.cs" t="Include" />
             <e p="MyItemPickup.cs" t="Include" />
           </e>
         </e>
