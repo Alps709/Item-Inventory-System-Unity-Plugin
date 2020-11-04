@@ -44,7 +44,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Items&amp;Inventory/MyItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Items&amp;Inventory/MyInventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Items&amp;Inventory/MyItemPickup.cs" />
-        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/MyItemPickup.cs" />
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/MyItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/MyInventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/MyInventoryUI.cs" />
@@ -54,10 +53,14 @@
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/InventoryUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/InventorySlot.cs" />
-        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Items&amp;Equipment/Effects/ForcePush.cs" />
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/EquipmentEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/Equipment.cs" />
+        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/ItemEditorWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/ItemCreatorEditorWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/MyItemPickup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Editor/ItemCreatorEditorWindow.cs" />
       </list>
     </option>
   </component>

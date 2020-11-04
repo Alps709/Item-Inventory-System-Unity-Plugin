@@ -1,6 +1,16 @@
 ﻿using System.Collections;
 using UnityEngine;
 
+//IMPORTANT: These types must be the exact spelling of the derived classes you make,
+//so it can get the correct type by converting the value to a string
+//eg. a derived item class called "class Consumable" must be "Consumable" for it's type
+//This is used for the custom editor window item asset creation in "ItemCreatorEditorWindow.cs"
+public enum ItemType
+{
+    Item,
+    Equipment
+}
+
 [CreateAssetMenu(fileName = "New Item", menuName = "Inventory/MyItem")]
 public class Item : ScriptableObject
 {
