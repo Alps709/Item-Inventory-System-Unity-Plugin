@@ -32,6 +32,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MyPlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63DD8BF9-8CFA-4BA9-85AF-735EF1A56BA9/9e/40bffb1f/Void.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63DD8BF9-8CFA-4BA9-85AF-735EF1A56BA9/de/544df211/List`1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -48,9 +49,6 @@
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/MyInventoryUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MouseLook.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MyPlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/InventoryUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/InventorySlot.cs" />
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Items&amp;Equipment/Effects/ForcePush.cs" />
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/EquipmentEffect.cs" />
@@ -58,8 +56,11 @@
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/ItemEditorWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/ItemCreatorEditorWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/MyItemPickup.cs" />
-        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Editor/ItemCreatorEditorWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MyPlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/InventoryUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/Inventory.cs" />
       </list>
     </option>
   </component>
@@ -141,5 +142,24 @@
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2381" y="170" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1604023003405" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Items&amp;Inventory/Editor/ItemCreatorEditorWindow.cs</url>
+          <line>104</line>
+          <properties documentPath="D:\Github\Item-Inventory-System-Unity-Plugin\Item-Inventory-System\Assets\Items&amp;Inventory\Editor\ItemCreatorEditorWindow.cs" initialLine="104">
+            <startOffsets>
+              <option value="3499" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3539" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

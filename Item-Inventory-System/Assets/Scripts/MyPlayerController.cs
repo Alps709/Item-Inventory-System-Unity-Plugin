@@ -96,6 +96,7 @@ public class MyPlayerController : MonoBehaviour
     }
     
     //Handle what the player controller should do when certain UI is opened
+    //The Inventory UI actually showing is handled in the InventoryUI script
     void OpenUI()
     {
         //Handle what happens when Inventory is opened/closed

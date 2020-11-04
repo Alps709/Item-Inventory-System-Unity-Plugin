@@ -11,7 +11,6 @@ public enum ItemType
     Equipment
 }
 
-[CreateAssetMenu(fileName = "New Item", menuName = "Inventory/MyItem")]
 public class Item : ScriptableObject
 {
     

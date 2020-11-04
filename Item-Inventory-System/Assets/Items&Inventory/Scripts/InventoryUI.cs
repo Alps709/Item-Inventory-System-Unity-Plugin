@@ -27,6 +27,7 @@ public class InventoryUI : MonoBehaviour
             return;
         }
         
+        //Add function callbacks to update the inventory UI when something has changed
         Inventory.OnInventoryChangedCallback += UpdateUI;
         Inventory.OnInventoryOpenedCallback += UpdateUI;
     }
@@ -36,14 +37,16 @@ public class InventoryUI : MonoBehaviour
     {
         if (Input.GetButtonDown("Inventory"))
         {
+            //Enable visibility of the UI
             TheInventoryUI.SetActive(!TheInventoryUI.activeSelf);
+            //Tell the inventory that it has been opened
             Inventory.Opened();
         }
     }
 
     void UpdateUI()
     {
-        if (Inventory.InventoryOpened)
+        if (Inventory.GetIsOpened())
         {
             Debug.Log("Updating Inventory UI!");
 

@@ -65,7 +65,6 @@ public class ItemCreatorEditorWindow : EditorWindow
             if (itemType == ItemType.Equipment)
             {
                 EditorGUILayout.LabelField("Equipment is always droppable!");
-                IsDropable = EditorGUILayout.Toggle("Is Droppable", IsDropable);
                 IsDropable = true;
             }
             else
@@ -74,6 +73,7 @@ public class ItemCreatorEditorWindow : EditorWindow
             }
         }
         
+        //Create the item Scriptable object file and create prefab if that is also true
         if (GUILayout.Button("Create Item"))
         {
             CreateItem(itemType, CreatePrefab);
@@ -102,8 +102,8 @@ public class ItemCreatorEditorWindow : EditorWindow
                 tempItem.icon = icon;
                 tempItem.material = material;
                 tempItem.mesh = mesh;
-                path += tempItem.name + ".asset";
-                AssetDatabase.CreateAsset(tempItem, path);
+                string newpath1 = path + tempItem.name + ".asset";
+                AssetDatabase.CreateAsset(tempItem, newpath1);
                 AssetDatabase.SaveAssets();
                 AssetDatabase.Refresh();
                 
@@ -126,8 +126,8 @@ public class ItemCreatorEditorWindow : EditorWindow
                 tempEquipment.material = material;
                 tempEquipment.mesh = mesh;
                 tempEquipment.Effects = Effects;
-                path += tempEquipment.name + ".asset";
-                AssetDatabase.CreateAsset(tempEquipment, path);
+                string newpath2 = path + tempEquipment.name + ".asset";
+                AssetDatabase.CreateAsset(tempEquipment, newpath2);
                 AssetDatabase.SaveAssets();
                 AssetDatabase.Refresh();
                 
@@ -162,13 +162,13 @@ public class ItemCreatorEditorWindow : EditorWindow
             
         prefabItem.AddComponent<Rigidbody>();
 
-        string path = "Assets/Items&Inventory/Items&Equipment/ItemPrefabs/" + prefabItem.name + ".prefab";
+        string newpath3 = "Assets/Items&Inventory/Items&Equipment/ItemPrefabs/" + prefabItem.name + ".prefab";
         
-        Debug.Log("Prefab creation path: " + prefabItem.name);
+        Debug.Log(string.Format("Prefab creation path: " + prefabItem.name));
         
-        PrefabUtility.SaveAsPrefabAsset(prefabItem, path);
+        PrefabUtility.SaveAsPrefabAsset(prefabItem, newpath3);
         
-        Destroy(prefabItem);
+        DestroyImmediate(item);
     }
 
     // private void CreateAsset(Type type)

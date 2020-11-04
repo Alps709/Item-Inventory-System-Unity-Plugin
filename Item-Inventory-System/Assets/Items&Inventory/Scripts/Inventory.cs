@@ -10,7 +10,7 @@ public class Inventory : MonoBehaviour
     public int MaxSize = 3;
     private int Size = 0;
 
-    public bool InventoryOpened = false;
+    private bool InventoryOpened = false;
 
     public delegate void OnInventoryChanged();
     public delegate void OnInventoryOpened();
@@ -19,6 +19,7 @@ public class Inventory : MonoBehaviour
     public OnInventoryOpened OnInventoryOpenedCallback;
     public bool Add(Item item)
     {
+        //If an item is a default item it is likely it has not been properly set up, so do not add it to the inventory
         if (!item.IsDefaultItem && Size < MaxSize)
         {
             Debug.Log("Adding the item: '" + item.name + "' to the inventory of '" + gameObject.name + "'");
@@ -36,8 +37,10 @@ public class Inventory : MonoBehaviour
     public bool Remove(Item item)
     {
         Debug.Log("Item ID: " + item.ID);
+        //If removal of item is possible
         if (InventoryItems.Remove(item))
         {
+            //Reduce current inventory size by 1
             Size--;
             OnInventoryChangedCallback?.Invoke();
             
@@ -48,8 +51,6 @@ public class Inventory : MonoBehaviour
                 dropLocation.localPosition += gameObject.transform.forward * 5.0f;
                 item.Drop(dropLocation);
             }
-            
-            
             return true;
         }
         return false;
@@ -62,6 +63,12 @@ public class Inventory : MonoBehaviour
         OnInventoryOpenedCallback?.Invoke();
     }
 
+    public bool GetIsOpened()
+    {
+        return InventoryOpened;
+    }
+
+    //This sorting function doesn't work
     // public void SortByName()
     // {
     //     InventoryItems.OrderBy(item => item.name);
