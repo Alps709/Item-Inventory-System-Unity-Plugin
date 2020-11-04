@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsDefaultItem: 0
   IsDroppable: 1
-  ID: -53730
-  Descripton: A sword the can use the force! :D
+  ID: 0
+  Descripton: A sword of a previous force user!
   icon: {fileID: 21300000, guid: 5de9e17ef4926294dbae18affe3b7105, type: 3}
   mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
   material: {fileID: 2100000, guid: 8264bef1b05c4cd448e4c2fc898fe7af, type: 2}
-  equipSlot: 5
+  equipSlot: 0
   armourModifier: 0
-  damageModifier: 10
+  damageModifier: 0
   Effects:
   - {fileID: 11400000, guid: e8e214affd98dec4292c7996080f8a01, type: 2}

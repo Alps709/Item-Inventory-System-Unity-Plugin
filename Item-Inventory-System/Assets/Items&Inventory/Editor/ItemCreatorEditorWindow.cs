@@ -6,6 +6,9 @@ using UnityEditor;
 
 public class ItemCreatorEditorWindow : EditorWindow
 {
+    //The file path to save the objects
+    string path = "Assets/Items&Inventory/Items&Equipment/";
+    
     private string itemName = "Default Name";
     public string description = "Default description";
     public Sprite icon;
@@ -34,11 +37,11 @@ public class ItemCreatorEditorWindow : EditorWindow
         itemName = EditorGUILayout.TextField("Item Name",itemName);
         description = EditorGUILayout.TextField("Item Description",description);
         
-        icon = (Sprite) EditorGUILayout.ObjectField("Inventory Icon", icon, typeof(Sprite));
+        icon = (Sprite) EditorGUILayout.ObjectField("Inventory Icon", icon, typeof(Sprite), false);
         
-        mesh = (Mesh) EditorGUILayout.ObjectField("Item Mesh", mesh, typeof(Mesh));
+        mesh = (Mesh) EditorGUILayout.ObjectField("Item Mesh", mesh, typeof(Mesh), false);
         
-        material = (Material) EditorGUILayout.ObjectField("Item Material", material, typeof(Material));
+        material = (Material) EditorGUILayout.ObjectField("Item Material", material, typeof(Material), false);
         
         itemType = (ItemType) EditorGUILayout.EnumPopup("Item Type", itemType);
         
@@ -52,43 +55,40 @@ public class ItemCreatorEditorWindow : EditorWindow
                 
                 EditorGUILayout.PropertyField(stringsProperty, true); // True means show children
                 so.ApplyModifiedProperties();
-                
-                // Effects = (EquipmentEffect) EditorGUILayout.ObjectField("Equipment Effect", Effects[i], typeof(EquipmentEffect[]));
-                // //Add array to be filled with EquipmentEffects here
-                // for (int i = 0; i < Effects.Length; i++)
-                // {
-                //     Effects[i] = (EquipmentEffect) EditorGUILayout.ObjectField("Equipment Effect", Effects[i], typeof(EquipmentEffect[]));
-                // }
                 break;
             }
         }
         
-        CreatePrefab = (bool) EditorGUILayout.Toggle("Create Prefab", CreatePrefab);
+        CreatePrefab = EditorGUILayout.Toggle("Create Prefab", CreatePrefab);
         if (CreatePrefab)
         {
             if (itemType == ItemType.Equipment)
             {
                 EditorGUILayout.LabelField("Equipment is always droppable!");
+                IsDropable = EditorGUILayout.Toggle("Is Droppable", IsDropable);
                 IsDropable = true;
             }
-            
-            IsDropable = (bool) EditorGUILayout.Toggle("Is Droppable", IsDropable);
+            else
+            {
+                IsDropable = EditorGUILayout.Toggle("Is Droppable", IsDropable);
+            }
         }
         
         if (GUILayout.Button("Create Item"))
         {
-            CreateScriptableItemInstance(itemType);
+            CreateItem(itemType, CreatePrefab);
+
             Debug.Log("Item created!");
         }
     }
 
-    private void CreateScriptableItemInstance(ItemType itemType)
+    private bool CreateItem(ItemType itemType, bool CreatePrefab)
     {
-        //Add the temp classes that the item could be, here
+        //Add all the temp classes that the item could be, here
+        //And then extend the switch
         Item tempItem = null;
         Equipment tempEquipment = null;
-        string path = "Assets/Items&Inventory/Items&Equipment/";
-        
+
         switch (itemType.ToString())
         {
             //These must be the exact names of the enum!
@@ -106,7 +106,12 @@ public class ItemCreatorEditorWindow : EditorWindow
                 AssetDatabase.CreateAsset(tempItem, path);
                 AssetDatabase.SaveAssets();
                 AssetDatabase.Refresh();
-                break;
+                
+                if (CreatePrefab)
+                {
+                    CreateItemPrefab(tempItem);
+                }
+                return true;
             }
             
             //These must be the exact names of the enum!
@@ -125,13 +130,43 @@ public class ItemCreatorEditorWindow : EditorWindow
                 AssetDatabase.CreateAsset(tempEquipment, path);
                 AssetDatabase.SaveAssets();
                 AssetDatabase.Refresh();
-                break;
+                
+                if (CreatePrefab)
+                {
+                    CreateItemPrefab(tempEquipment);
+                }
+                return true;
             }
         }
-        
-        
+
+        return false;
     }
-    
+
+    private void CreateItemPrefab(Item item)
+    {
+        GameObject prefabItem = new GameObject(this.name);
+        
+        //Add the item pickup script and set the item
+        var itemScript = prefabItem.AddComponent<MyItemPickup>();
+        itemScript.Item = item;
+            
+        //Add the mesh, material, collider, and rigidbody
+        var mesh = prefabItem.AddComponent<MeshFilter>();
+        mesh.mesh = this.mesh;
+            
+        var meshRenderer = prefabItem.AddComponent<MeshRenderer>();
+        meshRenderer.material = material;
+            
+        var meshCollider = prefabItem.AddComponent<MeshCollider>();
+        meshCollider.convex = true;
+            
+        prefabItem.AddComponent<Rigidbody>();
+
+        string path = "Assets/Items&Inventory/Items&Equipment/ItemPrefabs/";
+        
+        PrefabUtility.SaveAsPrefabAsset(prefabItem, path + prefabItem.name);
+    }
+
     // private void CreateAsset(Type type)
     // {
     //     var fileName = type.ToString().Split('.').Last();
