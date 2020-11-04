@@ -9,7 +9,7 @@ public class ItemCreatorEditorWindow : EditorWindow
     //The file path to save the objects
     string path = "Assets/Items&Inventory/Items&Equipment/";
     
-    private string itemName = "Default Name";
+    private string itemName = "Default Item Name";
     public string description = "Default description";
     public Sprite icon;
     public Mesh mesh;
@@ -144,7 +144,7 @@ public class ItemCreatorEditorWindow : EditorWindow
 
     private void CreateItemPrefab(Item item)
     {
-        GameObject prefabItem = new GameObject(this.name);
+        GameObject prefabItem = new GameObject(item.name);
         
         //Add the item pickup script and set the item
         var itemScript = prefabItem.AddComponent<MyItemPickup>();
@@ -162,9 +162,13 @@ public class ItemCreatorEditorWindow : EditorWindow
             
         prefabItem.AddComponent<Rigidbody>();
 
-        string path = "Assets/Items&Inventory/Items&Equipment/ItemPrefabs/";
+        string path = "Assets/Items&Inventory/Items&Equipment/ItemPrefabs/" + prefabItem.name + ".prefab";
         
-        PrefabUtility.SaveAsPrefabAsset(prefabItem, path + prefabItem.name);
+        Debug.Log("Prefab creation path: " + prefabItem.name);
+        
+        PrefabUtility.SaveAsPrefabAsset(prefabItem, path);
+        
+        Destroy(prefabItem);
     }
 
     // private void CreateAsset(Type type)

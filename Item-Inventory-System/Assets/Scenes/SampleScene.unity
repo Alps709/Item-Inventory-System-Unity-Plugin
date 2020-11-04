@@ -276,7 +276,7 @@ MonoBehaviour:
   IsFocused: 0
   HasInteracted: 0
   InteractingPlayer: {fileID: 0}
-  Item: {fileID: 11400000, guid: d6af22ae514e6364baf5cca49455be78, type: 2}
+  Item: {fileID: 0}
 --- !u!65 &261770807
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -698,7 +698,7 @@ MonoBehaviour:
   IsFocused: 0
   HasInteracted: 0
   InteractingPlayer: {fileID: 0}
-  Item: {fileID: 11400000, guid: d6af22ae514e6364baf5cca49455be78, type: 2}
+  Item: {fileID: 0}
 --- !u!65 &561723198
 BoxCollider:
   m_ObjectHideFlags: 0
