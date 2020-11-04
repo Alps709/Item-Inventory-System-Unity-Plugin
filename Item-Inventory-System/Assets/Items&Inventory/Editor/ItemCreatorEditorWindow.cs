@@ -168,7 +168,7 @@ public class ItemCreatorEditorWindow : EditorWindow
         
         PrefabUtility.SaveAsPrefabAsset(prefabItem, newpath3);
         
-        DestroyImmediate(item);
+        DestroyImmediate(prefabItem);
     }
 
     // private void CreateAsset(Type type)
