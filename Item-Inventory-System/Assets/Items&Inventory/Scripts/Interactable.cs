@@ -11,7 +11,7 @@ public class Interactable : MonoBehaviour
 
     public GameObject InteractingPlayer;
 
-    public virtual void InteractedWith()
+    public void InteractedWith()
     {
         if (IsFocused)
         {

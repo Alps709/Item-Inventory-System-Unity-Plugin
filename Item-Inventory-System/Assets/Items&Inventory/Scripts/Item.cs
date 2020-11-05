@@ -13,7 +13,9 @@ public enum ItemType
 
 public class Item : ScriptableObject
 {
-    
+    //This variable is used to keep track of whether an item was set up correctly,
+    //If this variable is true then it is likely that it was not set up properly and might cause problems when used.
+    //The inventory does not allow picking up of default items for this reason.
     public bool IsDefaultItem = true;
 
     public bool IsDroppable = true;

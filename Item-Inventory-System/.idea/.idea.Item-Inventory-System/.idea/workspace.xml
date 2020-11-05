@@ -56,11 +56,12 @@
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/ItemEditorWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/ItemCreatorEditorWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/MyItemPickup.cs" />
-        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MyPlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/InventoryUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Editor/ItemCreatorEditorWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/Interactable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Items&amp;Inventory/Scripts/Item.cs" />
       </list>
     </option>
   </component>
