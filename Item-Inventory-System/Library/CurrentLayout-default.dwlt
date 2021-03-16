@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: Project
   m_RootView: {fileID: 4}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 333, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 119
+  controlID: 32
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 166
+  controlID: 51
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 118
+  controlID: 122
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 92
+  controlID: 123
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -355,13 +355,13 @@ MonoBehaviour:
     width: 422
     height: 350
   m_ViewDataDictionary: {fileID: 0}
-  description: An Axe that is Ultimate!
-  icon: {fileID: 21300000, guid: c65af71e698151243967197a39cae86a, type: 3}
-  mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
-  material: {fileID: 2100000, guid: 8264bef1b05c4cd448e4c2fc898fe7af, type: 2}
+  description: TestItem
+  icon: {fileID: 21300000, guid: 3791f32089d66b148a17c11903128676, type: 3}
+  mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  material: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
   CreatePrefab: 1
-  IsDropable: 1
-  itemType: 1
+  IsDropable: 0
+  itemType: 0
   Effects:
   - {fileID: 11400000, guid: e8e214affd98dec4292c7996080f8a01, type: 2}
   - {fileID: 11400000, guid: e8e214affd98dec4292c7996080f8a01, type: 2}
@@ -413,8 +413,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -501
     m_HBaseRangeMax: 501
-    m_VBaseRangeMin: -267
-    m_VBaseRangeMax: 267
+    m_VBaseRangeMin: -277.5
+    m_VBaseRangeMax: 277.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -431,11 +431,11 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 21
+      y: 0
       width: 1002
-      height: 534
+      height: 555
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 501, y: 267}
+    m_Translation: {x: 501, y: 277.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -443,9 +443,9 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -501
-      y: -267
+      y: -277.5
       width: 1002
-      height: 534
+      height: 555
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1002, y: 555}
@@ -481,10 +481,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 46}
-      m_SelectedIDs: 1e330000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 623a0000
       m_LastClickedID: 0
-      m_ExpandedIDs: b8faffff20fbffff5efbffff5e370000a8370000
+      m_ExpandedIDs: 3efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -595,7 +595,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.36832237, y: -0.13225381, z: 0.053050227, w: 0.9187064}
     speed: 2
-    m_Value: {x: 0.36832455, y: -0.13225459, z: 0.05305054, w: 0.91871184}
+    m_Value: {x: -0.3683224, y: 0.13225381, z: -0.05305023, w: -0.9187065}
   m_Size:
     m_Target: 7.30627
     speed: 2
@@ -662,21 +662,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Items&Inventory/Scripts
+    - Assets/Items&Inventory/Items&Equipment
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Items&Inventory/Scripts
+  - Assets/Items&Inventory/Items&Equipment
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Github\Item-Inventory-System-Unity-Plugin\Item-Inventory-System
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: be3a0000
-    m_LastClickedID: 15038
-    m_ExpandedIDs: 00000000923a0000943a0000963a0000983a0000aa3a0000b43a000000ca9a3b
+    m_SelectedIDs: a83a0000
+    m_LastClickedID: 15016
+    m_ExpandedIDs: 00000000923a0000943a0000963a0000983a0000a03a0000a83a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -732,7 +732,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c62300003638000000000000
+    m_ExpandedInstanceIDs: c62300003638000000000000443a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -817,7 +817,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 514
+  m_LastVerticalScrollValue: 0
   m_AssetGUID: 
   m_InstanceID: 0
   m_LockTracker:
